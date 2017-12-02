@@ -19,4 +19,16 @@ describe Transaction do
       expect(subject.date).to eq(Date.today)
     end
   end
+
+  describe '#amount' do
+    it 'is created with an amount credited or withdrawn' do
+      expect(subject.amount).to eq(500)
+    end
+  end
+
+  describe '#balance' do
+    it 'is created with a record of the current balance' do
+      expect(subject.balance).to eq(1000)
+    end
+  end
 end
