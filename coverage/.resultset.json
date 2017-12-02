@@ -40,6 +40,41 @@
         null,
         null
       ],
+      "/Users/tom/techTests/bank-tech-test/spec/history_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        3,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/tom/techTests/bank-tech-test/lib/history.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/tom/techTests/bank-tech-test/spec/transaction_spec.rb": [
         1,
         1,
@@ -91,6 +126,6 @@
         null
       ]
     },
-    "timestamp": 1512252703
+    "timestamp": 1512253526
   }
 }
