@@ -3,11 +3,10 @@ require 'date'
 
 describe Transaction do
   type = 'credit'
-  date = Date.today
   amount = 500
   balance = 1000
 
-  let(:subject){ Transaction.new(type, date, amount, balance) }
+  let(:subject){ Transaction.new(type, amount, balance) }
 
   describe '#type' do
     it 'is created with a transaction type' do
@@ -15,4 +14,9 @@ describe Transaction do
     end
   end
 
+  describe '#date' do
+    it 'is created with a transaction date' do
+      expect(subject.date).to eq(Date.today)
+    end
+  end
 end
