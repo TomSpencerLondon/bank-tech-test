@@ -1,0 +1,5 @@
+require 'rspec/core/rake_task'
+
+RSpec::Cor::RakeTask.new :spec
+
+task default: [:spec]
