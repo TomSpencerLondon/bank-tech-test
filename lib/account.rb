@@ -1,9 +1,11 @@
 class Account
 
-  attr_reader :balance
+  attr_reader :balance, :history
 
-  def initialize(amount)
-    @balance = amount
+  def initialize(balance, transaction, history)
+    @balance = balance
+    @tansaction = transaction
+    @history = history
   end
 
   def credit(amount)
