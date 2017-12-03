@@ -13,6 +13,7 @@ class Account
   end
 
   def withdraw(amount)
+    raise 'You do not have the funds' if @balance < amount
     @balance -= amount
   end
 

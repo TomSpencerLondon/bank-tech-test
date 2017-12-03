@@ -22,5 +22,9 @@ describe Account do
     it 'withdraws and decreases the balance' do
       expect { subject.withdraw(amount) }.to change { subject.balance }.by(-500)
     end
+    it 'doesn\'t allow a user to withdraw more than is available' do
+      invalid_amount = 2000
+      expect{ subject.withdraw(invalid_amount) }.to raise_error('You do not have the funds')
+    end
   end
 end
