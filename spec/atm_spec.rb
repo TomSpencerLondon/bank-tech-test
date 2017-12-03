@@ -14,5 +14,14 @@ describe Atm do
     end
   end
 
+  describe '#withdraw' do
+    it 'allows a user to withdraw money' do
+      amount = 500
+      allow(account).to receive(:withdraw)
+      atm.withdraw(amount)
+    end
+
+  end
+
 
 end

@@ -9,4 +9,8 @@ class Atm
   def credit(amount)
     @account.credit(amount)
   end
+
+  def withdraw(amount)
+    @account.withdraw(amount)
+  end
 end
